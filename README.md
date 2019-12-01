@@ -6,6 +6,8 @@
 
 * Description: Simple example to demonstrate swagger UI.
 
-
-
-
+* Nuget Packages:
+	* Newtonsoft.Json - 12.0.2
+	* Serilog.AspNetCore - 3.1.0
+	* Swashbuckle.AspNetCore - 4.0.1
+	* Swashbuckle.AspNetCore.Annotations - 4.0.1

@@ -30,6 +30,7 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Serilog;
 using Swagger_Example_Api.Model;
+using Swashbuckle.AspNetCore.Annotations;
 using System;
 
 namespace Swagger_Example_Api.Controllers
@@ -44,6 +45,8 @@ namespace Swagger_Example_Api.Controllers
 		}
 
 		[HttpGet]
+		[SwaggerOperation(Summary = "Primary endpoint.",
+			Description = "This is an example of using swagger annotations!!!!!  See ApiController.cs")]
 		public IActionResult Get()
 		{
 			Log.Information("Attempting to perform GET.");
